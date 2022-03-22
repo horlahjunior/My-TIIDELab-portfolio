@@ -1,0 +1,429 @@
+/* reset the body size */
+
+body{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+      /* header section */
+
+header{
+background-image: url('unsplash.jpg');
+background-position: 50%;
+background-size: cover;
+height: 100vh;
+position: relative;
+}
+.header-overlay{
+    background-color: rgb( 0, 0, 0, 0.5);
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 0;
+}
+
+/* style logo*/
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+.headercon-wrapper{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: aqua;
+    margin-top: 7px;
+
+}
+/* style navlink  */
+
+.navlink{
+color:#000;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+transition: 0.5s;
+padding: 10px;
+margin: 10px;
+}
+
+.navlink.active{
+    color: red;
+
+}
+
+.hero-wrapper{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.who{
+    color: aqua;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profileimg{
+width: 200px;
+height: 200px;
+}
+.fullname{
+color: aqua;
+font-size: 35px;
+margin: 10px 0;
+}
+.media-wrapper svg{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    fill: aqua;
+    border-radius: 25px;
+    padding: 7px;
+    margin: 10px;
+    transition: 0.5s;
+    background-color: #fff;
+}
+.media-wrapper svg:hover{
+    fill: rgb(196, 8, 8);
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+} 
+
+
+.hero-button{
+    
+    background-color: aquamarine;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: 1px solid;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    }
+.btn-download:hover{
+    fill: #000;
+    cursor:pointer;
+    position: relative;
+    bottom: 10px;
+}
+.btn-contact:hover{
+    fill: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+.btn-download{
+    opacity: 0.8;
+    background-color: antiquewhite;
+    color: red;
+    border: 1px solid #000;
+    padding: 7px 7px;
+    border-radius: 10px;
+
+}
+
+.btn-contact{
+    opacity: 0.8;
+    background-color: red;
+    color: antiquewhite;
+    border: 1px solid #000;
+    padding: 7px 7px;
+    border-radius: 10px;
+
+}
+
+/*main body content styling*/
+main{
+    margin-top: 90px;
+}
+.section{
+    padding: 40px;
+}
+
+.section h2{
+font-size: 30px;
+font-weight: bold;
+color: red;
+margin-bottom: 10px 0;
+text-transform: uppercase;
+text-align: center;
+}
+
+.about-me{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.about-brief{
+text-align: center;
+margin-top: 20px;
+line-height: 2;
+
+}
+
+/*currently working at*/
+
+.pows{
+    margin: 40px 0;
+    background-color: red;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.pows h2{
+    color: antiquewhite;
+}
+.pows-wrapper{
+    text-align: center;
+    margin: 40px;
+}
+.pows-pill{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 26px;
+    font-size: 14px;
+    transition: 1.5;
+
+}
+
+/*project card styling*/
+
+.project-card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 2rem;
+}
+
+/*to make dem 3 on a row
+.project-card-wrapper{
+    flex-wrap: wrap;
+
+}
+*/
+.project-card{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.project-card img{
+    width: 100%;
+    height: 200px;
+}
+.card-content{
+    width: 300px;
+    padding: 2px 16px;
+}
+.project-title{
+    color: orangered;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.project-brief{
+    font-size: 17px;
+}
+.project-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+.project-links svg{
+    width: 20px;
+    height: 20px;
+    fill: orangered;
+}
+.project-links svg:hover{
+    fill: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+/*stack section*/
+.stack-group{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/*for chrome*/
+.stack-progress::-webkit-progress-bar{
+    background-color: #eee;
+    border-radius: 100px;
+}
+
+.stack-progress::-webkit-progress-value{
+    background-color: #f9320a;
+    border-radius: 100px;
+}
+
+/*for firefox*/
+.stack-progress::-moz-progress-bar{
+    background-color: #eee;
+    border-radius: 100px;
+}
+
+/*for IEI0*/
+.stack-progress{
+    color: #f9320a;
+    border-radius: 100px;
+}
+.stack-progress-wrapper label{
+display: block;
+}
+
+/*service styling*/
+
+.service-section{
+    margin: 40px 0;
+    min-height: 300px;
+    background-color: red;
+}
+.service-section h2{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.service-card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;   
+}
+.service-card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.service-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.4);
+    background-color: #eee;
+}
+.service-card svg{
+    width: 30px;
+    height: 30px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.service-card-content{
+  text-align: center;
+  padding: 2px 16px;
+  width: 300px; 
+}
+.service-title{
+    color: #f9320a;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.service-brief{
+    font-size: 17px;
+    color: #000;
+}
+
+/*work wit me section*/
+
+.form-selection form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-group input{
+    border: 1px solid #f9320a;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.form-group textarea{
+ border: 1px solid #f9320a;
+ border-radius: 5px;
+ padding: 10px;
+ width: 400px;
+ height: 300px;
+ resize: none;
+margin-bottom: 10px;
+}
+.form-group button{
+    background-color: #f9320a;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 26px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*connect with me*/
+
+.social-account-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.social-account-wrapper svg{
+    width: 30px;
+    height: 30px;
+    color: #f9320a;
+}
+.social-account-wrapper svg:hover{
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+
+}
